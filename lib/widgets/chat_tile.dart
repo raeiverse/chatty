@@ -2,18 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:chatty/theme.dart';
 
 class ChatTile extends StatelessWidget {
-  final String imageUrl;
-  final String name;
-  final String text;
-  final String time;
+  final imageUrl;
+  final name;
+  final text;
+  final time;
   final bool read;
-
   ChatTile(
-      {required this.imageUrl,
-      required this.name,
-      required this.text,
-      required this.time,
-      required this.read});
+      {this.imageUrl, this.name, this.text, this.time, required this.read});
 
   @override
   Widget build(BuildContext context) {
